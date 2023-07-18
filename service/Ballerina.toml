@@ -1,8 +1,0 @@
-[package]
-org = "ChanakaJayasena"
-name = "service"
-version = "1.0.0"
-distribution = "2201.7.0"
-
-[build-options]
-observabilityIncluded = true

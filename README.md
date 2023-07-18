@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# APK Config Language Support
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Visual Studio Code extension for providing language support for APK configuration YAML files.
 
-## Available Scripts
+## Features
+- Syntax highlighting for APK configuration YAML files.
+![screencast](https://raw.githubusercontent.com/wso2/apk/main/runtime/runtime-ui/images/demo1.gif)
 
-In the project directory, you can run:
+- Auto-completion for APK configuration YAML properties and values.
+- Validation and error checking for APK configuration YAML files.
+- Create new apk configuration files with provided templates.
+![screencast](https://raw.githubusercontent.com/wso2/apk/main/runtime/runtime-ui/images/demo2.gif)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Visual Studio Code version 1.63.0 or newer.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Launch Visual Studio Code.
+2. Go to the Extensions view by clicking on the square icon in the sidebar or pressing `Ctrl+Shift+X`.
+3. Search for "APK Config Language Support".
+4. Click on the "Install" button for the extension published by "APK Config Language Support".
+5. The extension will be installed and activated automatically. ( This extension is depending on the YAML Language Support by Red Hat extension). If it's not installed, this will install it automatically.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Open a APK Configuration file (.apk-conf).
+2. The extension will automatically provide syntax highlighting and code completion for APK configuration properties and values.
+3. Errors and warnings will be displayed if there are any issues with the YAML structure or values.
+4. Use the provided code snippets to quickly insert common APK configuration patterns.
+5. Create new APK Configuration will provide you with set of templates to get started.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions are welcome! Here's how you can get involved:
 
-### `npm run eject`
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request describing your changes.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Extension Packaging Guide
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This guide provides instructions on how to package the extension.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Prerequisites
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Node.js 16+ (https://nodejs.org)
+- Yarn (https://yarnpkg.com)
 
-## Learn More
+#### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Install Node.js 16+ from the official website.
+2. Install Yarn globally by following the instructions on the official Yarn website.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Usage
+
+1. Open your terminal or command prompt and navigate to the project's root directory.
+2. Run the following command to install the project dependencies:
+
+    ```shell
+    yarn
+    ```
+3. Once the dependencies are installed, run the following command to build the extension:
+
+    ``` shell
+    yarn run build
+    ```
+    This command triggers the build process, which compiles the source code, optimizes assets, and generates the final packaged extension.
+
+    After running the build command, you should find the packaged extension files in the designated build output directory.
+
+
+## License
+
+This extension is licensed under the [Apache 2.0 License](LICENSE).
