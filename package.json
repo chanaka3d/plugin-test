@@ -4,7 +4,7 @@
   "description": "APK config language support ",
   "author": "WSO2",
   "license": "Apache 2.0",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "WSO2",
   "bugs": "https://github.com/wso2/apk/issues",
   "repository": {
@@ -33,13 +33,19 @@
     "workspaceContains:**/*.apk-conf"
   ],
   "main": "./out/extension.js",
-  "extensionDependencies": ["redhat.vscode-yaml"],
+  "extensionDependencies": [
+    "redhat.vscode-yaml"
+  ],
   "contributes": {
     "languages": [
       {
         "id": "yaml",
-        "aliases": ["APK Configuration"],
-        "extensions": [".apk-conf"],
+        "aliases": [
+          "APK Configuration"
+        ],
+        "extensions": [
+          ".apk-conf"
+        ],
         "configuration": "./language-configuration.json"
       }
     ]
