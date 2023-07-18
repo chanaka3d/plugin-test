@@ -17,6 +17,11 @@ jobs:
         - run: cd ..
         - run: yarn --frozen-lockfile
         - run: npm install --global vsce
-        - run: vsce publish -p ${{ secrets.VSCE_TOKEN }}
+        - name: "Patching the existing extension in VS Code Marketplace"
+          if: ${{ github.event.inputs.patch == 'true' }}
+          run: vsce publish --pre-release -p ${{ secrets.VSCE_TOKEN }}
+        - name: "Publishing in VS Code Marketplace"
+          if: ${{ github.event.inputs.patch == 'true' }}
+          run: vsce publish patch --pre-release -p ${{ secrets.VSCE_TOKEN }}
 
 
