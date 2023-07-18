@@ -19,7 +19,7 @@
     },
     "version": {
       "type": "string",
-      "title": "Version of the API",
+      "title": "Version of the APIx",
       "maxLength": 30,
       "minLength": 1,
         "pattern": "^[^~!@#;:%^*()+={}|\\\\<>\"',&/$\\[\\]\\s+\\/]+$",
