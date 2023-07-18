@@ -11,7 +11,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	const yamlExtension = vscode.extensions.getExtension('redhat.vscode-yaml');
 	if (!yamlExtension) {
 		vscode.window.showErrorMessage(
-			'The "YAML Language Support by Red Hat" extension is required for the APK Configuration extension to work properly. Please install it and reload the window.'
+			'xThe "YAML Language Support by Red Hat" extension is required for the APK Configuration extension to work properly. Please install it and reload the window.'
 		);
 		return;
 	}
